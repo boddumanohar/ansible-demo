@@ -1,0 +1,9 @@
+---
+  - name: "Playing with Ansible and Git"
+    hosts: localhost
+    connection: local
+    tasks:
+      - name: Template a file to create tst.txt
+        template:
+          src: test.txt.j2
+          dest: ./test.txt

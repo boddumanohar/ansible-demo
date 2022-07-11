@@ -1,0 +1,11 @@
+{% set food = 'FOOD_IN_FRIDGE=MILK,FISH' %}
+{% if food_apple is defined and food_apple == "true" %}
+{% set food = food + ',APPLE'%}
+{% endif %}
+{% if food_orange is defined and food_orange == "true" %}
+{% set food = food + ',ORANGE'%}
+{% endif %}
+{% if food_egg is defined and food_egg == "true" %}
+{% set food = food + ',EGG'%}
+{% endif %}
+{{ food }}
